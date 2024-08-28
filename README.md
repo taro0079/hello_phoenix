@@ -16,3 +16,24 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Docs: https://hexdocs.pm/phoenix
   * Forum: https://elixirforum.com/c/phoenix-forum
   * Source: https://github.com/phoenixframework/phoenix
+## How to install
+### Ubuntu
+```bash
+sudo add-apt-repository ppa:rabbitmq/rabbitmq-erlang
+sudo apt update
+sudo apt install elixir erlang-dev erlang-xmerl
+```
+
+## command
+### migrate
+```bash
+mix ecto.migrate
+```
+### run server
+```bash
+mix phx.server
+```
+### generate controller
+```bash
+mix phx.gen.html User Users users name:string age:integer
+```
